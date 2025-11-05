@@ -67,7 +67,7 @@ public class Microcontrolador implements Programable {
     }
 
     private void validarRango(Integer addr) {
-        if (0 > addr || addr > memoria.size()) {
+        if (0 > addr || addr > 1023) {
             throw new ValorFueraDeRangoException();
         }
     }
